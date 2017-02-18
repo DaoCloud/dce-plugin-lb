@@ -1,5 +1,5 @@
-#! /bin/bash -e
+#! /bin/sh -e
 
-RUN sed -i 's@PROXY_URL@'$PROXY_URL'@g' /etc/nginx/conf.d/default.conf
+sed -i 's@PROXY_URL@'$PROXY_URL'@g' /etc/nginx/conf.d/default.conf
 
 nginx -g "daemon off;"
